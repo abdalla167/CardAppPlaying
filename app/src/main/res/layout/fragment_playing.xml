@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E6E2C8"
+    tools:context=".ui.fragment.PlayingFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="15sp"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#FFFF"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506"
+                app:layout_constraintWidth_percent="0.2"
+                app:cardCornerRadius="5dp"
+                >
+                <ImageView
+                    android:id="@+id/mycard_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F4F3E3"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintHorizontal_bias="0.658"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506"
+                app:layout_constraintWidth_percent="0.2"
+                app:cardCornerRadius="5dp"
+                >
+                <ImageView
+                    android:id="@+id/mycard_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F4F3E3"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintHorizontal_bias="0.344"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506"
+                app:layout_constraintWidth_percent="0.2"
+                app:cardCornerRadius="5dp"
+                >
+                <ImageView
+                    android:id="@+id/mycard_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F4F3E3"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506"
+                app:layout_constraintWidth_percent="0.2"
+                app:cardCornerRadius="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/mycard_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F4F3E3"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

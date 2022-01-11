@@ -1,0 +1,24 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.creatroomfragment.ScaneQRCodeFragment">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+app:autoFocusButtonColor="#FFFF"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="#FFFF"
+        app:flashButtonVisible="true"
+        app:frameColor="#FFFF"
+        app:frameCornersSize="50dp"
+        app:frameCornersRadius="0dp"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
