@@ -25,313 +25,367 @@ class CreatingCardes {
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "1.1"
+                    "1.1",
+                    1
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "1.2"
+                    "1.2",
+                    1
+
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "1.3"
+                    "1.3",
+                    1
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "1.4"
+                    "1.4",
+                    1
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "2.1"
+                    "2.1",
+                    2
+
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "2.2"
+                    "2.2",
+                    2
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "2.3"
+                    "2.3",
+                    2
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "2.4"
+                    "2.4",
+                    2
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "3.1"
+                    "3.1",
+                    3
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "3.2"
+                    "3.2",
+                    3
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "3.3"
+                    "3.3",
+                    3
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "3.4"
+                    "3.4",
+                    3
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "4.1"
+                    "4.1",
+                    4
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "4.2"
+                    "4.2",
+                    4
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "4.3"
+                    "4.3",
+                    4
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "4.4"
+                    "4.4",
+                    4
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "5.1"
+                    "5.1",
+                    5
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "5.2"
+                    "5.2",
+                    5
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "5.3"
+                    "5.3",
+                    5
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "5.4"
+                    "5.4",
+                    5
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "6.1"
+                    "6.1",
+                    6
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "6.2"
+                    "6.2",
+                    6
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "6.3"
+                    "6.3",
+                    6
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "6.4"
+                    "6.4",
+                    6
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "7.1"
+                    "7.1",
+                    7
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "7.2"
+                    "7.2",
+                    7
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "7.3"
+                    "7.3",
+                    7
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "7.4"
+                    "7.4",
+                    7
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "8.1"
+                    "8.1",
+                    8
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "8.2"
+                    "8.2",
+                    8
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "8.3"
+                    "8.3",
+                    8
                 ),
                 CardModel(
                     condationAbality = SeeMyCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "8.4"
+                    "8.4",
+                    8
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "9.1"
+                    "9.1",
+                    9
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "9.2"
+                    "9.2",
+                    9
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "9.3"
+                    "9.3",
+                    9
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "9.4"
+                    "9.4",
+                    9
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "10.1"
+                    "10.1",
+                    10
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "10.2"
+                    "10.2",
+                    10
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "10.3"
+                    "10.3",
+                    10
                 ),
                 CardModel(
                     condationAbality = SeeFrindCard().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "10.4"
+                    "10.4",
+                    10
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "11.1"
+                    "11.1",
+                    11
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "11.2"
+                    "11.2",
+                    11
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "11.3"
+                    "11.3",
+                    11
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "11.4"
+                    "11.4",
+                    11
                 ),
                 CardModel(
                     condationAbality = ExchangeMyCardWithMyFrind().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "12.1"
+                    "12.1",
+                    12
                 ),
                 CardModel(
                     condationAbality = ExchangeMyCardWithMyFrind().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "12.2"
+                    "12.2",
+                    12
                 ),
                 CardModel(
                     condationAbality = ExchangeMyCardWithMyFrind().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "12.3"
+                    "12.3",
+                    12
                 ),
                 CardModel(
                     condationAbality = ExchangeMyCardWithMyFrind().abality(),
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "12.4"
+                    "12.4",
+                    12
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "13.1"
+                    "13.1",
+                    0
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "13.2"
+                    "13.2",
+                    0
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "13.3"
+                    "13.3",
+                    13
                 ),
                 CardModel(
                     condationAbality = condationAbality,
                     condtionCurrentCard = condtionCurrentCard,
                     icanSee = icanSee,
-                    "13.4"
+                    "13.4",
+                    13
                 )
 
             ).shuffled()
