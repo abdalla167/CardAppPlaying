@@ -29,30 +29,28 @@ class ViewModelCreatNewRoom : ViewModel() {
 
     fun AddnewPlayerToFirebase(idRoom:String,nameplayer:String)
     {
-        var error=
-            if(idRoom==null)
-            {
-                "Somthing Wroing"
+            var error=
+                if(idRoom==null)
+                {
+                    "Somthing Wroing"
 
-            }else null
+                }else null
 
-        error?.let{
-            _AddNewPlayer.postValue(Resource.Error(it))
-            return
-        }
+            error?.let{
+                _AddNewPlayer.postValue(Resource.Error(it))
+                return
+            }
         _AddNewPlayer.postValue((Resource.Loading()))
         viewModelScope.launch (Dispatchers.IO)
         {
             val listofcard=repCreateNewRoom.deletFourCardFromDatabase(idRoom)
-            val person= listofcard.data?.let { Person(nameplayer,false,0, it) }
+            val person= listofcard.data?.let { Person(nameplayer,false,0, it,"") }
             val addnewplayer= person?.let { repCreateNewRoom.addNewPlayer(idRoom, it) }
             _AddNewPlayer.postValue(addnewplayer)
             idPlayerNotChange = addnewplayer?.data.toString()
 
         }
     }
-
-
 
     fun creatNewRoom(room: Room) {
         var error =

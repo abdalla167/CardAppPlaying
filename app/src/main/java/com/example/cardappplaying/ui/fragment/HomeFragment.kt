@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.cardappplaying.R
+import com.example.cardappplaying.other.SharedPrefrance
 import kotlinx.android.synthetic.main.fragment_create_new_room.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -29,11 +31,20 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var sh=SharedPrefrance(view.context)
         createnewroom.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment2_to_createNewRoom)
         }
         enterintoromm.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment2_to_scaneQRCodeFragment)
+            if(usernameSacnner.text.toString().equals(""))
+            {
+                Toast.makeText(this@HomeFragment.requireActivity(),"pleas enter user name before scanning room",Toast.LENGTH_SHORT)
+                usernameSacnner.error
+            }
+            else {
+                sh.saveNamePlayer(usernameSacnner.text.toString())
+                findNavController().navigate(R.id.action_homeFragment2_to_scaneQRCodeFragment)
+            }
         }
 
     }

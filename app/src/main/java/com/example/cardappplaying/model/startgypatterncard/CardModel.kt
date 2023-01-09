@@ -8,9 +8,9 @@ data class CardModel(var condationAbality: Int,
                      var icanSee:Boolean,
                      var cardname:String,
                      var cardvalue:Int,
-                     var imageCard:Int
+                     var imageCard:String
 ) : Serializable  {
 
-constructor():this(0,0,false,"",0, R.drawable.background)
+constructor():this(0,0,false,"",0, "")
 
  }

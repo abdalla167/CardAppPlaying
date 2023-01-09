@@ -45,10 +45,10 @@
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cardView2"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.506">
+        app:layout_constraintVertical_bias="0.32999998">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/createnewroom"
@@ -58,6 +58,7 @@
             android:padding="10dp"
             android:text="create new room"
             android:textColor="#000" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -70,7 +71,7 @@
         app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.509">
+        app:layout_constraintVertical_bias="0.32999998">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/enterintoromm"
@@ -81,6 +82,32 @@
             android:text="Enter Room"
             android:textColor="#000" />
     </androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent="0.06"
+    app:layout_constraintHorizontal_bias="0.52"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+    app:layout_constraintVertical_bias="0.809"
+    app:layout_constraintWidth_percent="0.3"
+    app:cardCornerRadius="10dp"
+    >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/usernameSacnner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAF9E3"
+        android:hint="user name"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:paddingLeft="5dp"
+        />
+
+</androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

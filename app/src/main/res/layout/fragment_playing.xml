@@ -4,8 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E6E2C8"
-    tools:context=".ui.fragment.PlayingFragment">
+    android:background="#F6F5EB"
+    tools:context=".ui.fragment.playingRoomFragment.PlayingFragment">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="his turn : "
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/cardView__"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <TextView
+        android:id="@+id/usernamehisturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:textColor="#F40505"
+        app:layout_constraintBottom_toTopOf="@+id/cardView__"
+        app:layout_constraintEnd_toStartOf="@+id/namePlayer"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView5"
@@ -25,11 +51,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/materialCardView3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_percent="0.5"
@@ -37,7 +65,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.506"
-                app:layout_constraintWidth_percent="0.2">
+                app:layout_constraintWidth_percent="0.2"
+                android:backgroundTint="#F6EEBC"
+
+                >
 
                 <ImageView
                     android:id="@+id/mycard_one"
@@ -58,7 +89,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.506"
-                app:layout_constraintWidth_percent="0.2">
+                app:layout_constraintWidth_percent="0.2"
+                android:backgroundTint="#F6EEBC"
+
+                >
 
                 <ImageView
                     android:id="@+id/mycard_two"
@@ -80,7 +114,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.506"
-                app:layout_constraintWidth_percent="0.2">
+                app:layout_constraintWidth_percent="0.2"
+                android:backgroundTint="#F6EEBC"
+
+                >
 
                 <ImageView
                     android:id="@+id/mycard_three"
@@ -102,7 +139,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.506"
-                app:layout_constraintWidth_percent="0.2">
+                app:layout_constraintWidth_percent="0.2"
+                android:backgroundTint="#F6EEBC"
+
+                >
 
                 <ImageView
                     android:id="@+id/mycard_four"
@@ -110,6 +150,7 @@
                     android:layout_height="match_parent"
                     android:background="#F4F3E3" />
             </com.google.android.material.card.MaterialCardView>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -124,30 +165,30 @@
         android:textColor="#000"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027"
         app:layout_constraintWidth_percent="0.5" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="36dp"
         app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView7"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.3"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHeight_percent="0.30"
+        app:layout_constraintHorizontal_bias="0.022"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namePlayer"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintWidth_percent="0.4">
+        app:layout_constraintTop_toBottomOf="@+id/cardView__"
+        app:layout_constraintVertical_bias="0.883"
+        app:layout_constraintWidth_percent="0.45">
 
         <ImageView
-            android:id="@+id/imagecardclose"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#FFFF"
             />
     </androidx.cardview.widget.CardView>
 
@@ -155,22 +196,53 @@
         android:id="@+id/cardView7"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="36dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.3"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHeight_percent="0.30"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namePlayer"
-        app:layout_constraintVertical_bias="0.832"
-        app:layout_constraintWidth_percent="0.4">
+        app:layout_constraintTop_toBottomOf="@+id/cardView__"
+        app:layout_constraintVertical_bias="0.875"
+        app:layout_constraintWidth_percent="0.45"
+
+        >
         <ImageView
-            android:id="@+id/imagecardopen"
+            android:id="@+id/get_new_card_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFF"
+            android:src="@drawable/backcardplay"
+            android:scaleType="fitXY"
             />
+
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView__"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namePlayer"
+        app:layout_constraintVertical_bias="0.082"
+        app:layout_constraintWidth_percent="0.9"
+        app:cardCornerRadius="10dp"
+        >
+
+        <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/carouselRecyclerview"
+
+            tools:listitem="@layout/item_player" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

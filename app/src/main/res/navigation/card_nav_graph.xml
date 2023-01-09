@@ -30,10 +30,26 @@
         android:id="@+id/scaneQRCodeFragment"
         android:name="com.example.cardappplaying.ui.fragment.creatroomfragment.ScaneQRCodeFragment"
         android:label="fragment_scane_q_r_code"
-        tools:layout="@layout/fragment_scane_q_r_code" />
+        tools:layout="@layout/fragment_scane_q_r_code" >
+        <action
+            android:id="@+id/action_scaneQRCodeFragment_to_playingFragment"
+            app:destination="@id/playingFragment" />
+        <action
+            android:id="@+id/action_scaneQRCodeFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/createNewRoom"
         android:name="com.example.cardappplaying.ui.fragment.creatroomfragment.CreateNewRoom"
         android:label="fragment_create_new_room"
-        tools:layout="@layout/fragment_create_new_room" />
+        tools:layout="@layout/fragment_create_new_room" >
+        <action
+            android:id="@+id/action_createNewRoom_to_playingFragment"
+            app:destination="@id/playingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playingFragment"
+        android:name="com.example.cardappplaying.ui.fragment.playingRoomFragment.PlayingFragment"
+        android:label="fragment_playing"
+        tools:layout="@layout/fragment_playing" />
 </navigation>

@@ -7,7 +7,9 @@ data class Person(
     var name:String,
     var itIsHisTurn:Boolean=false,
     var total:Int,
-    var card: ArrayList<CardModel>
-): Serializable {
+    var card: ArrayList<CardModel>?,
+    var id:String
+):Serializable{
+    constructor():this("",false,0,null,"")
 
 }
