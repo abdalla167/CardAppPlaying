@@ -23,12 +23,20 @@ class RepCreatingRoom {
 
 
     suspend fun addNewPlayer(idRoom: String, person: Person): Resource<String> {
+        //get numers of current player in this room and give this turn to player
+
+
+
+
         var databaseReference = FirebaseDatabase.getInstance().getReference("room")
+
+        var number=getcurrentnumberOfPlayer(idRoom)
 
         return withContext(Dispatchers.IO) {
             safeCall {
                 val key = databaseReference.push().key.toString()
                 person.id=key
+                person.numberTurn=Integer.parseInt( number.toString()+"")
                 databaseReference
                     .child(idRoom)
                     .child("players").child(key)
@@ -96,6 +104,35 @@ class RepCreatingRoom {
         }
 
     }
+    suspend fun getcurrentnumberOfPlayer(idRoom:String):Resource<String>
+    {
+        var r:Room
+        var number:String
+        number=""
+        return withContext(Dispatchers.IO){
+
+                var databaseReference =
+                    FirebaseDatabase.getInstance().getReference("room").child(idRoom)
+                        .child("currentNumberOfPlayerInRoom")
+
+                databaseReference.addValueEventListener(object :ValueEventListener{
+                    override fun onDataChange(snapshot: DataSnapshot) {
+                        r= snapshot.getValue(Room::class.java)!!
+
+                    }
+
+                    override fun onCancelled(error: DatabaseError) {
+                        TODO("Not yet implemented")
+                    }
+
+                })
+
+            Resource.Success(number.toString())
+
+
+        }
+    }
+
 
 
 }

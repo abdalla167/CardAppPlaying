@@ -8,7 +8,9 @@ import java.io.Serializable
 data class Room (var players:ArrayList<Person>,
                  var highScour:Int?=0,
                  var cardingroundclosed:ArrayList<CardModel>,
-                 var cardingroundopen:ArrayList<CardModel>
+                 var cardingroundopen:ArrayList<CardModel>,
+                 var currentTurnPlay:Int?=1,
+                 var currentNumberOfPlayerInRoom:Int?=0
                  ):Serializable
 {
 

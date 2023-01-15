@@ -8,8 +8,9 @@ data class Person(
     var itIsHisTurn:Boolean=false,
     var total:Int,
     var card: ArrayList<CardModel>?,
-    var id:String
+    var id:String,
+    var numberTurn:Int
 ):Serializable{
-    constructor():this("",false,0,null,"")
+    constructor():this("",false,0,null,"",0)
 
 }

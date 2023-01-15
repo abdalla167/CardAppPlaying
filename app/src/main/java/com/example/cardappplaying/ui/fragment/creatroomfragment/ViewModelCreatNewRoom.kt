@@ -44,7 +44,7 @@ class ViewModelCreatNewRoom : ViewModel() {
         viewModelScope.launch (Dispatchers.IO)
         {
             val listofcard=repCreateNewRoom.deletFourCardFromDatabase(idRoom)
-            val person= listofcard.data?.let { Person(nameplayer,false,0, it,"") }
+            val person= listofcard.data?.let { Person(nameplayer,false,0, it,"",0) }
             val addnewplayer= person?.let { repCreateNewRoom.addNewPlayer(idRoom, it) }
             _AddNewPlayer.postValue(addnewplayer)
             idPlayerNotChange = addnewplayer?.data.toString()

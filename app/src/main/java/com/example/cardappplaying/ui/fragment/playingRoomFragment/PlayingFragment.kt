@@ -66,12 +66,10 @@ class PlayingFragment : Fragment() {
                 is Resource.Success -> {
                     it.data?.card?.get(0)?.imageCard?.let { it1 -> mycard_one.setImageResource(it1.toInt()) }
                     it.data?.card?.get(1)?.imageCard?.let { it1 -> mycard_two.setImageResource(it1.toInt()) }
-                    it.data?.card?.get(2)?.imageCard?.let { it1 ->
-                        mycard_three.setImageResource(it1.toInt())
+                    it.data?.card?.get(2)?.imageCard?.let { it1 -> mycard_three.setImageResource(it1.toInt())
                         mycard_three.visibility = GONE
                     }
-                    it.data?.card?.get(3)?.imageCard?.let { it1 ->
-                        mycard_four.setImageResource(it1.toInt())
+                    it.data?.card?.get(3)?.imageCard?.let { it1 -> mycard_four.setImageResource(it1.toInt())
                         mycard_four.visibility = GONE
                     }
 
